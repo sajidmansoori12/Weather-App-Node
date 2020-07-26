@@ -4,6 +4,7 @@
 const path = require('path') // Inbuilt Module to manipulate paths
 const express = require('express')
 const app = express()
+const port = process.env.PORT || 3000
 const hbs = require('hbs')
 const forecast = require('./utils/forecast')
 
@@ -84,6 +85,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server up and running at port 3000.')
+app.listen(port, () => {
+    console.log('Server up and running at port '+port)
 })
