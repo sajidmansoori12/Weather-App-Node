@@ -7,11 +7,6 @@ console.log('Client side javascript is loaded')
 //         console.log(data)
 //     })
 // })
-
-
-
-
-
 const weatherForm = document.querySelector('form')
 const searchElement = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
@@ -35,4 +30,4 @@ weatherForm.addEventListener('submit',(e)=>{
         }
     })
 })
-})
+}) 
