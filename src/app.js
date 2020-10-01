@@ -2,7 +2,7 @@
 // To run the code use node app.js -e otherwise the partials won't work
 
 const path = require('path') // Inbuilt Module to manipulate paths
-const express = require('express')
+const express = require('express') // using express framework
 const app = express()
 const port = process.env.PORT || 3000
 const hbs = require('hbs')
@@ -15,7 +15,7 @@ app.use(express.static(publicDirectoryPath)) // This will call index.html file b
 // app.use(express.static(path.join(publicDirectoryPath,'/help.html'))) // This will serve up the help.html page
 // app.use(express.static(path.join(publicDirectoryPath,'/about.html'))) // This will serve up the about.html page
 
-const viewsPath = path.join(__dirname, '../templates/views')
+const viewsPath = path.join(__dirname, '../templates/views') // load templates from directory
 const partialsPath = path.join(__dirname, '../templates/partials')
 app.set('view engine', 'hbs'); // To use hbs module to create handlebars (handlebars are used to serve up dynamic content )
 app.set('views', viewsPath) // Used to change the default path for views / templates
