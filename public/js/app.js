@@ -1,5 +1,5 @@
 // const { response } = require("express")
-
+// load script from client side
 console.log('Client side javascript is loaded')
 
 // fetch('http://puzzle.mead.io/puzzle').then((response)=>{
